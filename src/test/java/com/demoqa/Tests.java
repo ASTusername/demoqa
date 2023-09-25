@@ -11,7 +11,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
 
 public class Tests extends Data {
-    private By btnLogin = By.xpath("//div[@class='card mt-4 top-card']");
+    private By btnElements = By.xpath("//div[@class='card mt-4 top-card'][1]");
     private By textBox = By.xpath("//div[@class='element-list collapse show']//li[@id='item-0']");
     private By inputFullName = By.xpath("//div[@class='col-md-9 col-sm-12']//input[@id='userName']");
     private By inputEmail = By.xpath("//div[@class='col-md-9 col-sm-12']//input[@id='userEmail']");
@@ -51,7 +51,7 @@ public class Tests extends Data {
 
         driver.get(getDate.getUrl);
         driver.manage().window().maximize();
-        driver.findElement(btnLogin).click();
+        driver.findElement(btnElements).click();
 
         driver.findElement(textBox).click();
         driver.findElement(inputFullName).sendKeys(getDate.fullName);
