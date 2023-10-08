@@ -10,7 +10,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 
-public class Tests extends Data {
+public class Tests{
     private By btnElements = By.xpath("//div[@class='card mt-4 top-card'][1]");
     private By textBox = By.xpath("//div[@class='element-list collapse show']//li[@id='item-0']");
     private By inputFullName = By.xpath("//div[@class='col-md-9 col-sm-12']//input[@id='userName']");
